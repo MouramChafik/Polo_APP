@@ -95,7 +95,9 @@ export const HeaderSection = () => {
                   </div>
                 ) : (
                   <img
-                    className={`${button.iconClassName || "w-8 h-8 md:w-10 md:h-10"} mb-2 md:mb-0`}
+                    className={`${
+                      button.iconClassName || "w-8 h-8 md:w-10 md:h-10"
+                    } mb-2 md:mb-0`}
                     alt={`Icon for ${button.title}`}
                     src={button.icon}
                   />
@@ -111,60 +113,34 @@ export const HeaderSection = () => {
 
       <Card className="border-none shadow-none">
         <CardContent className="p-4 md:p-0">
-          <div className="flex flex-col items-center mb-8">
-            <div className="relative w-[120px] md:w-[178px] h-[120px] md:h-[178px] mb-4">
-              <img
-                className="absolute w-[96px] md:w-[143px] h-[96px] md:h-[143px] top-[24px] md:top-[35px] left-0"
-                alt="Search background"
-                src="/group.png"
-              />
-              <img
-                className="absolute w-[92px] md:w-[138px] h-[90px] md:h-[134px] top-7 md:top-11 left-[3px] md:left-[5px]"
-                alt="Vector"
-                src="/vector-13.svg"
-              />
-              <img
-                className="absolute w-[90px] md:w-[136px] h-[90px] md:h-[136px] top-0 left-[28px] md:left-[42px]"
-                alt="Vector"
-                src="/vector-9.svg"
-              />
-              <img
-                className="absolute w-[77px] md:w-[116px] h-[77px] md:h-[116px] top-3 md:top-5 left-[41px] md:left-[62px]"
-                alt="Vector"
-                src="/vector-6.svg"
-              />
-              <img
-                className="absolute w-[62px] md:w-[94px] h-[62px] md:h-[94px] top-[14px] md:top-[21px] left-[42px] md:left-[63px]"
-                alt="Vector"
-                src="/vector-9.svg"
-              />
-              <img
-                className="absolute w-[53px] md:w-20 h-[53px] md:h-20 top-[23px] md:top-[35px] left-[51px] md:left-[77px]"
-                alt="Vector"
-                src="/vector-8.svg"
-              />
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+            <div className="w-full flex justify-center items-center md:items-center">
+              <div className="relative w-[120px] md:w-[178px] h-[120px] md:h-[178px] mx-auto md:mx-0">
+                <img
+                  className="absolute w-[96px] md:w-[143px] h-[96px] md:h-[143px] top-[24px] md:top-[35px] left-0"
+                  alt="Search background"
+                  src="/search-icon.svg"
+                />
+              </div>
             </div>
 
-            <h2 className="text-[#3ce0a0] font-bold text-lg md:text-xl mb-1">
-              Recherchez un patient
-            </h2>
-            <p className="text-gray-500 text-xs md:text-sm mb-4 text-center">
-              Entrez les premières lettres du nom du patient pour lancer la
-              recherche
-            </p>
+            {/* Content on the right */}
+              <div className=" flex flex-col w-full items-center justify-center md:items-center">
+                <h2 className="text-[#3ce0a0] font-bold text-lg md:text-xl mb-1">
+                  Recherchez un patient
+                </h2>
+                <p className="text-gray-500 text-xs md:text-sm mb-4 text-center md:text-left">
+                  Entrez les premières lettres du nom du patient pour lancer la
+                  recherche
+                </p>
 
-            <div className="flex flex-col md:flex-row gap-4 w-full max-w-md">
-              <Input
-                className="rounded-md border-gray-300"
-                placeholder="Rechercher..."
-              />
-              <Button
-                variant="outline"
-                className="border-gray-300 text-gray-500"
-              >
-                Réinitialiser
-              </Button>
-            </div>
+                <div className="flex flex-col gap-4 w-full max-w-md">
+                  <Input
+                    className="rounded-[40px] border-gray-300"
+                    placeholder="Rechercher..."
+                  />
+                </div>
+              </div>
           </div>
 
           <Separator className="w-full h-px" />

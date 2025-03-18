@@ -1,12 +1,12 @@
 
 import './App.css'
-import { HeaderSection } from './components/HeaderSection'
+import { ElementDesktopPatients } from './components/ElementDesktopPatients'
 
 function App() {
 
   return (
       <div>
-      <HeaderSection />
+      < ElementDesktopPatients />
       </div>)
 }
 
