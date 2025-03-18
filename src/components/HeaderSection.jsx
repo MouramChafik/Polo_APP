@@ -47,7 +47,7 @@ export const HeaderSection = () => {
 
   return (
     <section className="w-full max-w-[1142px] mx-auto px-4 md:px-0">
-      <div className="w-full bg-[url(/union-8.svg)] bg-[100%_100%] pt-8 md:pt-12 pb-8 md:pb-16">
+      <div className="w-full bg-[url(/union-8.svg)] bg-[100%_100%] pt-8 md:pt-12 pb-8 md:pb-10 ">
         <h1 className="font-black text-2xl md:text-[40px] text-gris-fonc text-center [font-family:'Nunito',Helvetica] leading-8 md:leading-10 mb-6 md:mb-10">
           Les patients du cabinet
         </h1>
