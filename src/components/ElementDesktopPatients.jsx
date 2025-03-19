@@ -46,18 +46,17 @@ export const ElementDesktopPatients = () => {
           />
         </div>
       </header>
-      <div className="bg-white flex flex-row justify-center w-full min-h-screen">
+      <div className="bg-white flex flex-row justify-center w-full  min-h-screen">
         <div className="bg-white w-full max-w-[1440px] relative flex flex-col md:flex-row">
           {/* Mobile menu bar */}
-          <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 flex h-14">
+          <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 flex h-14 shadow-[0_-4px_10px_rgba(0,0,0,0.2)]">
             {/* Menu button section */}
             <div className="flex-1 bg-[#3ce0a0] flex items-center justify-start">
-            <Button
-  variant="ghost"
-  className="text-white w-[4rem] h-full flex items-center justify-start hover:bg-[#3ce0a0]/90 border-r-2 border-white "
-  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
->
-
+              <Button
+                variant="ghost"
+                className="text-white w-[4rem] h-full flex items-center justify-start hover:bg-[#3ce0a0]/90 border-r-2 border-white "
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -80,17 +79,20 @@ export const ElementDesktopPatients = () => {
             </div>
             {/* Points counter section */}
             <div className="w-[140px] bg-[#ffd75f] flex  flex-col items-center justify-center">
-              <span className="  text-white text-2xl font-bold mr-1  [font-family:'Nunito',Helvetica]">1740</span>
-              <span className="  text-black text-sm font-bold [font-family:'Nunito',Helvetica]">points</span>
+              <span className="  text-white text-2xl font-bold mr-1  [font-family:'Nunito',Helvetica]">
+                1740
+              </span>
+              <span className="  text-black text-sm font-bold [font-family:'Nunito',Helvetica]">
+                points
+              </span>
             </div>
           </div>
           {/* Left navigation */}
           <aside
-  className={`${
-    isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-  } fixed md:relative md:translate-x-0 z-40 transition-transform duration-300 ease-in-out w-full md:w-[21%] h-full`}
->
-
+            className={`${
+              isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+            } fixed md:relative md:translate-x-0 z-40 transition-transform duration-300 ease-in-out w-full md:w-[21%] h-full top-0 left-0`}
+          >
             <NavigationMenuSection />
           </aside>
           <div className="bg-white flex flex-row justify-center w-full">

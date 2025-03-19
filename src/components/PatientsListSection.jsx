@@ -72,7 +72,7 @@ const patients = [
 export const PatientsListSection = () => {
   return (
     <section className="w-full max-w-[781px] mx-auto px-4 md:px-0">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 pb-32">
         {patients.map((patient) => (
           <PatientCard key={patient.id} patient={patient} />
         ))}
@@ -86,7 +86,7 @@ const PatientCard = ({ patient }) => {
 
   return (
     <div className="w-full mt-8">
-      <div className="relative flex flex-col items-center">
+      <div className="relative flex flex-col items-center justify-center ">
       <div className="relative -mb-6 z-10">
           <div className="w-24 h-24 rounded-full flex items-center justify-center">
             <Avatar className="w-[88px] h-[88px] border-4 border-white rounded-full overflow-hidden">

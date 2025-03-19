@@ -37,7 +37,7 @@ export const HeaderSection = () => {
   ];
 
   return (
-    <section className="w-full max-w-[1142px] mx-auto px-4 md:px-0">
+    <section className="w-full  ">
 <div className="w-full flex flex-col items-center justify-center  min-h-[200px] bg-[url(/union-8.svg)] bg-center bg-no-repeat bg-cover pt-8 md:pt-12 pb-8 md:pb-16">
 <h1 className="font-black text-4xl md:text-[40px] text-gris-fonc text-center [font-family:'Nunito',Helvetica] leading-8 md:leading-10 mb-6 md:mb-10">
   Les patients <span className="block md:inline">du cabinet</span>
@@ -120,7 +120,7 @@ export const HeaderSection = () => {
             </div>
 
             {/* Content on the right */}
-            <div className="flex flex-col w-full items-center justify-center md:items-center">
+            <div className="flex flex-col w-full items-center justify-center md:items-center px-8 md:px-0">
               <h2 className="text-[#3ce0a0] font-bold text-lg md:text-xl mb-1">
                 Recherchez un patient
               </h2>

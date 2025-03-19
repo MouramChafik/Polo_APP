@@ -94,7 +94,7 @@ export const NavigationMenuSection = () => {
         </div>
 
         {/* Contact buttons at the bottom */}
-        <div className="absolute w-[139px] h-[60px] bottom-[110px] left-0">
+        <div className="absolute w-[139px] h-[60px] bottom-[60px] left-0 mb-[2px] sm:mb-0">
           <div className="relative h-[60px] rounded-[100px_0px_0px_100px]">
             <div className="absolute w-[139px] h-[60px] top-0 left-0 bg-white rounded-[0px_100px_100px_0px]" />
             <Button
