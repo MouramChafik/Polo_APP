@@ -29,20 +29,21 @@ export const NavigationMenuSection = () => {
   ];
 
   return (
-    <nav className="w-[304px] h-full">
-      <div className="relative w-[300px] h-full bg-vert">
-        <div className="pt-[65px] px-[60px]">
+    <nav className="w-full h-full ">
+      <div className="relative w-full h-full bg-vert ">
+        <div className="pt-[65px] px-8 md:px-[60px]">
           <ul className="flex flex-col items-start gap-8">
             {menuItems.map((item) => (
               <li key={item.id} className="w-full">
                 {item.subItems ? (
                   <div className="relative">
                     {item.active && (
-                      <img
-                        className="absolute w-2.5 h-8 -left-[60px] top-0"
-                        alt="Marqueur"
-                        src="/marqueur.svg"
-                      />
+                     <img
+                     className="absolute w-2.5 h-8 -left-8 md:-left-[60px] top-0"
+                     alt="Marqueur"
+                     src="/marqueur.svg"
+                   />
+                   
                     )}
                     <Accordion
                       type="single"
@@ -93,7 +94,7 @@ export const NavigationMenuSection = () => {
         </div>
 
         {/* Contact buttons at the bottom */}
-        <div className="absolute w-[139px] h-[60px] bottom-[60px] left-0">
+        <div className="absolute w-[139px] h-[60px] bottom-[110px] left-0">
           <div className="relative h-[60px] rounded-[100px_0px_0px_100px]">
             <div className="absolute w-[139px] h-[60px] top-0 left-0 bg-white rounded-[0px_100px_100px_0px]" />
             <Button
