@@ -38,7 +38,7 @@ export const HeaderSection = () => {
 
   return (
     <section className="w-full max-w-[1142px] mx-auto px-4 md:px-0">
-<div className="w-full bg-[url(/union-8.svg)] bg-no-repeat bg-cover py-8 md:py-16 px-4 md:px-8">
+<div className="w-full min-h-[200px] bg-[url(/union-8.svg)] bg-center bg-no-repeat bg-cover pt-8 md:pt-12 pb-8 md:pb-16">
 <h1 className="font-black text-2xl md:text-[40px] text-gris-fonc text-center [font-family:'Nunito',Helvetica] leading-8 md:leading-10 mb-6 md:mb-10">
           Les patients du cabinet
         </h1>
