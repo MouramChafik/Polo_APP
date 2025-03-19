@@ -85,33 +85,41 @@ const PatientCard = ({ patient }) => {
   const { name, age, avatar, phone, email, address, selected } = patient;
 
   return (
-    <div className="w-full">
-      <div className="relative">
-        <div className="flex flex-col items-center mb-4">
-          <Avatar className="w-20 h-20 md:w-[120px] md:h-[120px]">
-            <AvatarImage
-              src={avatar}
-              alt={`Avatar de ${name}`}
-              className="object-cover"
-            />
-            <AvatarFallback>{name.charAt(0)}</AvatarFallback>
-          </Avatar>
+    <div className="w-full mt-8">
+      <div className="relative flex flex-col items-center">
+      <div className="relative -mb-6 z-10">
+          <div className="w-24 h-24 rounded-full flex items-center justify-center">
+            <Avatar className="w-[88px] h-[88px] border-4 border-white rounded-full overflow-hidden">
+              <AvatarImage
+                src={avatar}
+                alt={`Avatar de ${name}`}
+                className="w-full h-full object-cover"
+              />
+              <AvatarFallback>{name.charAt(0)}</AvatarFallback>
+            </Avatar>
+          </div>
+        </div>
 
-          <div className="mt-4 text-center">
-            <h3 className="font-black text-vert text-base tracking-[0.16px] leading-[19.5px] font-['Nunito',Helvetica]">
+        <Card
+          className={`rounded-[10px] ${
+            selected ? "w-full bg-white border-2 border-[#3ce0a0]" : " w-full bg-[#e4f4ed] border-0"
+          }`}
+        >
+             <div className="mt-4 text-center">
+            <h3 className="p-4 font-black text-vert text-base tracking-[0.16px] leading-[19.5px] font-['Nunito',Helvetica]">
               {name}
             </h3>
             <p className="font-normal text-sm text-[#363636] tracking-[0] leading-[17.6px] font-['Nunito',Helvetica]">
               {age} ans
             </p>
           </div>
-        </div>
-
-        <Card
-          className={`rounded-[10px] ${
-            selected ? "bg-white border-2 border-[#3ce0a0]" : "bg-[#e4f4ed] border-0"
-          }`}
-        >
+            <div className="flex justify-center mt-4">
+            <img
+                className="w-full md:w-[179px] h-px object-cover my-2"
+                alt="Filet"
+                src="/filet.svg"
+              />
+            </div>
           <CardContent className="p-4 md:p-8 md:pt-6">
             <div className="space-y-4">
               <div className="flex items-start">
@@ -135,12 +143,6 @@ const PatientCard = ({ patient }) => {
                   {email}
                 </span>
               </div>
-
-              <img
-                className="w-full md:w-[179px] h-px object-cover my-2"
-                alt="Filet"
-                src="/filet.svg"
-              />
 
               <div className="flex items-start">
                 <div className="w-4 h-5 mr-3 relative flex-shrink-0">

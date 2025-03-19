@@ -73,8 +73,6 @@ export const ElementDesktopPatients = () => {
                   <div className="bg-white flex flex-row justify-center w-full">
                       <div className="bg-white w-full max-w-[1440px] relative flex">
                           <div className="flex-1 flex flex-col">
-
-
                               <main className="flex-1 flex flex-col">
                                   <HeaderSection />
                                   <PatientsListSection />
