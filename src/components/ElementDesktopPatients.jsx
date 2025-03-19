@@ -11,7 +11,7 @@ export const ElementDesktopPatients = () => {
   return (
     <><header className="w-full h-[22%] bg-white flex items-center justify-between px-[60px]">
           <div className="flex items-center h-[49px]">
-              <div className="w-[29px] h-10 bg-[url(/calque-1-2-1.png)] bg-[100%_100%]" />
+              <div className="w-[29px] h-10 bg-[url(/calque-1-2-1.avif)] bg-[100%_100%]" />
               <img
                   className="w-[29px] h-[30px] ml-1"
                   alt="Vector"
@@ -33,7 +33,9 @@ export const ElementDesktopPatients = () => {
                   Dufour
               </div>
               <Avatar className="w-9 h-9">
-                  <img src="/avatar-infirmier.svg" alt="Avatar infirmier" />
+                  <img src="/avatar-infirmier.svg" alt="Avatar infirmier"
+                  className="w-full h-full object-cover"
+                  />
               </Avatar>
               <img
                   className="w-[15px] h-2 ml-2"

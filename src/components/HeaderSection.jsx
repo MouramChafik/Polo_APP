@@ -38,23 +38,25 @@ export const HeaderSection = () => {
 
   return (
     <section className="w-full max-w-[1142px] mx-auto px-4 md:px-0">
-<div className="w-full min-h-[200px] bg-[url(/union-8.svg)] bg-center bg-no-repeat bg-cover pt-8 md:pt-12 pb-8 md:pb-16">
-<h1 className="font-black text-2xl md:text-[40px] text-gris-fonc text-center [font-family:'Nunito',Helvetica] leading-8 md:leading-10 mb-6 md:mb-10">
-          Les patients du cabinet
-        </h1>
+<div className="w-full flex flex-col items-center justify-center  min-h-[200px] bg-[url(/union-8.svg)] bg-center bg-no-repeat bg-cover pt-8 md:pt-12 pb-8 md:pb-16">
+<h1 className="font-black text-4xl md:text-[40px] text-gris-fonc text-center [font-family:'Nunito',Helvetica] leading-8 md:leading-10 mb-6 md:mb-10">
+  Les patients <span className="block md:inline">du cabinet</span>
+</h1>
 
-        <div className="flex flex-col md:flex-row md:justify-center gap-3 md:gap-4 mb-8 md:mb-16">
+
+        <div className="flex flex-col md:flex-row w-full md:justify-center items-center gap-3 md:gap-4 mb-8 md:mb-16">
           {actionButtons.map((button) => (
-            <Button
-              key={button.id}
-              variant={button.isPrimary ? "default" : "outline"}
-              className={`h-14 md:h-20 px-4 md:px-6 rounded-[100px] ${
-                button.isPrimary
-                  ? "bg-[#3ce0a0] hover:bg-[#3ce0a0]/90 text-white"
-                  : "border-2 border-[#3ce0a0] text-[#3ce0a0] hover:bg-transparent"
-              }`}
-            >
-              <div className="flex items-center gap-3 md:gap-4 w-full justify-center md:justify-start">
+           <Button
+           key={button.id}
+           variant={button.isPrimary ? "default" : "outline"}
+           className={`h-14 md:h-20 w-full max-w-[216px] px-4 md:px-6 rounded-[100px] flex items-center justify-center ${
+             button.isPrimary
+               ? " lg:max-w-[280px] bg-[#3ce0a0] hover:bg-[#3ce0a0]/90 text-white"
+               : " border-2 border-[#3ce0a0] text-[#3ce0a0] hover:bg-transparent"
+           }`}
+         >
+         
+              <div className="flex items-center gap-3 md:gap-4 w-full justify-center ">
                 {button.hasCustomIcon ? (
                   <div className="relative">
                     {button.id === 1 && (
