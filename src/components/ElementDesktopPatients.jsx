@@ -3,6 +3,7 @@ import { Avatar } from "../../src/components/components/ui/Avatar";
 import { Button } from "../../src/components/components/ui/Button";
 import { HeaderSection } from "../components/HeaderSection";
 import { NavigationMenuSection } from "../components/NavigationMenuSection";
+import { PatientsListSection } from "../components/PatientsListSection";
 
 export const ElementDesktopPatients = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -76,6 +77,7 @@ export const ElementDesktopPatients = () => {
 
                               <main className="flex-1 flex flex-col">
                                   <HeaderSection />
+                                  <PatientsListSection />
                               </main>
                           </div>
                       </div>
